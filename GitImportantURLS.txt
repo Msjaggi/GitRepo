@@ -1,2 +1,18 @@
 https://help.github.com/articles/changing-a-remote-s-url/
 https://help.github.com/articles/generating-ssh-keys/
+
+---After setting the ssh url, change the settings to use ssh from https, otherwise using https will keep asking username and pwd everytime
+Mehnaz-MacBook:GitTest mehnaz$ git remote -v
+origin	https://github.com/Msjaggi/GitRepo.git (fetch)
+origin	https://github.com/Msjaggi/GitRepo.git (push)
+Mehnaz-MacBook:GitTest mehnaz$ git remote set-url origin git@github.com/msjaggi/GitRepo.git
+Mehnaz-MacBook:GitTest mehnaz$ git remote -v
+origin	git@github.com/msjaggi/GitRepo.git (fetch)
+origin	git@github.com/msjaggi/GitRepo.git (push)
+
+-----
+
+
+
+
+
